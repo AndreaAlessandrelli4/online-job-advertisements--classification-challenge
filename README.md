@@ -1,6 +1,6 @@
 # Web Intelligence - Classification Challenge
 
-This repository contains the codebase for the team **"theitalianjob"** participating in the "THE CLASSIFICATION OF OCCUPATIONS FOR ONLINE JOB ADVERTISEMENTS CHALLENGE – The second round of the European Statistics Awards for Web Intelligence" organized by Eurostat.
+This repository contains the codebase for the team **"theitalianjob"** participating in the ["THE CLASSIFICATION OF OCCUPATIONS FOR ONLINE JOB ADVERTISEMENTS CHALLENGE – The second round of the European Statistics Awards for Web Intelligence"](https://statistics-awards.eu/competitions/12#participate-submit_results) organized by Eurostat.
 
 The core workflow is based on a modular pipeline integrating retrieval systems, language models, and classification logic.
 
