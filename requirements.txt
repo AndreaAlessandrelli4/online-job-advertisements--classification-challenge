@@ -1,8 +1,8 @@
-numpy==
-pandas==1.5.3
-torch
-transformers
-sentence_transformers
-FlagEmbedding
-weaviate
-OpenAI (optional)
+numpy==1.26.4
+pandas==2.2.2
+torch==2.6.0
+transformers==4.51.0
+sentence-transformers==3.0.1
+FlagEmbedding==1.2.11
+weaviate-client==4.7.1
+openai==1.53.0 #(optional)
