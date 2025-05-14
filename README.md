@@ -121,4 +121,4 @@ The pipeline is modular and includes:
 # Authors
 
 * [Andrea Alessandrelli](mailto:a.alessandrelli@studenti.unipi.it)
-* [Pasquale Maritato](mailto:pasquale.maritato@outlook.com)
+* [Pasquale Maritato](mailto:p.maritato@studenti.unipi.it)
