@@ -77,7 +77,7 @@ To perform the classification using our pipeline, follow these steps:
      * Run `Gemma_classification.py` locally with `gemma-2-9b-it-SimPO`, or
      * Run `Chat_classification.py` using OpenAI's `gpt-4o-mini` API
 
-# [Architecture Overview](`[images/](https://github.com/AndreaAlessandrelli4/online-job-advertisements-classification-challenge/tree/main/images)`)
+# [Architecture Overview](images/)
 
 The pipeline is modular and includes:
 
