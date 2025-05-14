@@ -105,10 +105,10 @@ The pipeline is modular and includes:
 
 # Repository Structure
 
-* `src/` - Core code for preprocessing, retrieval, and classification
-* [`assets`](assets/) Contains the project's documents regarding the reproducibility award (i.e., reproducibility_approach_description).
+* [`src/`](src/) - Contains all the source code.
+* [`assets/`](assets/) Contains the project's documents regarding the reproducibility award (i.e., reproducibility_approach_description).
 * [`images/`](images/) - Diagrams and architecture visuals
-* `requirements.txt` - Python dependencies
+* [`requirements.txt`](requirements.txt) Contains the project's requirements.
 
 # Originality & Future Directions
 
