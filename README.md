@@ -108,7 +108,7 @@ The pipeline is modular and includes:
 * `data/` - All input, intermediate, and final datasets
 * `src/` - Core code for preprocessing, retrieval, and classification
 * `tests/` - Unit and integration tests
-* `images/` - Diagrams and architecture visuals
+* [`images/`](images/) - Diagrams and architecture visuals
 * `main.ipynb` - Jupyter notebook orchestrating the workflow
 * `requirements.txt` - Python dependencies
 
