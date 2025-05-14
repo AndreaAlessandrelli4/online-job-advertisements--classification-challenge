@@ -41,14 +41,43 @@ The task was to classify job advertisements into ISCO categories. Our approach c
 
 ### 4. **RAG + Reranking**
 
-* Queried Weaviate to retrieve top 10 relevant occupations' descriptions
+* Queried Weaviate to retrieve top 10 relevant occupations (alpha = 0, 0.5, 1)
 * Reranked with `bge-reranker-large`
 * Matched job titles with ESCO database for extra candidates
 * Constructed prompts for the LLM with grouped and formatted occupations
 * LLM assigned the final **ISCO-4-digit code**
 * **Execution time**: \~10 hours
 
-# Architecture Overview
+# How to Run the Pipeline
+
+To perform the classification using our pipeline, follow these steps:
+
+1. **Create a Weaviate sandbox**
+
+   * Sign up and launch a sandbox at [weaviate.io](https://weaviate.io/)
+
+2. **Index the ISCO occupation data**
+
+   * Update `indexing_en.py` with your sandbox URL and API key
+   * Run it to index all occupation descriptions
+
+3. **Extract features from job ads**
+
+   * Run `feature.py` and `query_feature.py` using the model `princeton-nlp/gemma-2-9b-it-SimPO`
+   * This step translates and extracts structured features like title, skills, industry, and experience
+
+4. **Retrieve and rerank matching occupations**
+
+   * Run `embedding.py` to search the Weaviate index and group results under their corresponding 4-digit ISCO categories
+
+5. **Classify job ads into ISCO categories**
+
+   * Either:
+
+     * Run `Gemma_classification.py` locally with `gemma-2-9b-it-SimPO`, or
+     * Run `Chat_classification.py` using OpenAI's `gpt-4o-mini` API
+
+# [Architecture Overview](`images/`)
 
 The pipeline is modular and includes:
 
@@ -94,4 +123,4 @@ The pipeline is modular and includes:
 # Authors
 
 * [Andrea Alessandrelli](mailto:a.alessandrelli@studenti.unipi.it)
-* [Pasquale Maritato](mailto:p.maritato@studenti.unipi.it) / [pasquale.maritato@outlook.com](mailto:pasquale.maritato@outlook.com)
+* [Pasquale Maritato](mailto:pasquale.maritato@outlook.com)
