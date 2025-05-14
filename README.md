@@ -105,11 +105,9 @@ The pipeline is modular and includes:
 
 # Repository Structure
 
-* `data/` - All input, intermediate, and final datasets
 * `src/` - Core code for preprocessing, retrieval, and classification
-* `tests/` - Unit and integration tests
+* [`assets`](assets/) Contains the project's documents regarding the reproducibility award (i.e., reproducibility_approach_description).
 * [`images/`](images/) - Diagrams and architecture visuals
-* `main.ipynb` - Jupyter notebook orchestrating the workflow
 * `requirements.txt` - Python dependencies
 
 # Originality & Future Directions
